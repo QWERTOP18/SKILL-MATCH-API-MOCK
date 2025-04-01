@@ -1,0 +1,6 @@
+id,name,email,technical_skill,problem_solving_ability,communication_skill,security_awareness,leadership_and_collaboration,learning_and_adaptability,engineer_type
+1,John Doe,john.doe@example.com,70,20,10,0,0,0,1
+2,Jane Smith,jane.smith@example.com,60,30,15,5,10,10,2
+3,Sam Johnson,sam.johnson@example.com,50,40,20,10,15,15,3
+4,Anna Lee,anna.lee@example.com,80,10,30,5,5,5,1
+5,Bob Brown,bob.brown@example.com,65,25,20,5,10,10,2
