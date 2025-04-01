@@ -56,12 +56,12 @@ erDiagram
 {
   "name": "John Doe",
   "email": "johndoe@example.com",
-  "technical_skill": "Ruby on Rails",
-  "problem_solving_ability": "Advanced",
-  "communication_skill": "Excellent",
-  "security_awareness": "High",
-  "leadership_and_collaboration": "Strong",
-  "learning_and_adaptability": "Very High",
+  "technical_skill": 3,
+  "problem_solving_ability": 5,
+  "communication_skill": 4,
+  "security_awareness": 3,
+  "leadership_and_collaboration": 4,
+  "learning_and_adaptability": 5,
   "engineer_type_id": 1
 }
 ```
@@ -99,11 +99,12 @@ erDiagram
 {
   "text": "What is the best way to improve problem-solving skills?",
   "technical_skill": "Problem-solving",
-  "problem_solving_ability": "Advanced",
-  "communication_skill": "Intermediate",
-  "security_awareness": "Medium",
-  "leadership_and_collaboration": "High",
-  "learning_and_adaptability": "Very High"
+  "technical_skill": 3,
+  "problem_solving_ability": 5,
+  "communication_skill": 4,
+  "security_awareness": 3,
+  "leadership_and_collaboration": 4,
+  "learning_and_adaptability": 5
 }
 ```
 
