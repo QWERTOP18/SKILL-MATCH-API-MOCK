@@ -1,7 +1,8 @@
 
 Rails.application.routes.draw do
-  resources :users, except: [ :new ]
-  get "signup", to: "users#new"
+  get "docs/index"
+  root "docs#index"
+  resources :users
   resources :questions
   resources :engineer_types
 

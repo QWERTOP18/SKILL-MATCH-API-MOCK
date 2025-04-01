@@ -1,0 +1,101 @@
+<h1>Docs#index</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIの簡単な使い方</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    h2 {
+      color: #555;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>簡単なAPIの使い方</h1>
+
+  <h2>1. ユーザーの取得 (GET /users)</h2>
+  <p>全てのユーザーを取得します。</p>
+  <p><strong>リクエスト:</strong> <code>GET /users</code></p>
+
+  <h2>2. ユーザーの作成 (POST /users)</h2>
+  <p>名前とメールを提供して、新しいユーザーを作成します。</p>
+  <p><strong>リクエスト:</strong> <code>POST /users</code></p>
+  <p><strong>リクエストボディ:</strong></p>
+  <pre><code>{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "technical_skill": "Ruby on Rails",
+  "problem_solving_ability": "Advanced",
+  "communication_skill": "Excellent",
+  "security_awareness": "High",
+  "leadership_and_collaboration": "Strong",
+  "learning_and_adaptability": "Very High",
+  "engineer_type_id": 1
+}</code></pre>
+
+  <h2>3. ユーザーの更新 (PUT /users/{userId})</h2>
+  <p>特定のユーザーをIDで指定し、名前とメールを更新します。</p>
+  <p><strong>リクエスト:</strong> <code>PUT /users/{userId}</code></p>
+  <p><strong>リクエストボディ:</strong></p>
+  <pre><code>{
+  "name": "John Smith",
+  "email": "johnsmith@example.com"
+}</code></pre>
+
+  <h2>4. ユーザーの削除 (DELETE /users/{userId})</h2>
+  <p>特定のユーザーをIDで指定して削除します。</p>
+  <p><strong>リクエスト:</strong> <code>DELETE /users/{userId}</code></p>
+
+  <h2>5. 質問の取得 (GET /questions)</h2>
+  <p>全ての質問を取得します。</p>
+  <p><strong>リクエスト:</strong> <code>GET /questions</code></p>
+
+  <h2>6. 質問の作成 (POST /questions)</h2>
+  <p>質問のタイトルと内容を提供して、新しい質問を作成します。</p>
+  <p><strong>リクエスト:</strong> <code>POST /questions</code></p>
+  <p><strong>リクエストボディ:</strong></p>
+  <pre><code>{
+  "text": "What is the best way to improve problem-solving skills?",
+  "technical_skill": "Problem-solving",
+  "problem_solving_ability": "Advanced",
+  "communication_skill": "Intermediate",
+  "security_awareness": "Medium",
+  "leadership_and_collaboration": "High",
+  "learning_and_adaptability": "Very High"
+}
+</code></pre>
+
+  <h2>7. エンジニアタイプの取得 (GET /engineer_types)</h2>
+  <p>全てのエンジニアタイプを取得します。</p>
+  <p><strong>リクエスト:</strong> <code>GET /engineer_types</code></p>
+
+  <h2>8. エンジニアタイプの作成 (POST /engineer_types)</h2>
+  <p>エンジニアタイプの名前を提供して、新しいエンジニアタイプを作成します。</p>
+  <p><strong>リクエスト:</strong> <code>POST /engineer_types</code></p>
+  <p><strong>リクエストボディ:</strong></p>
+  <pre><code>{
+  "name": "Frontend Developer"
+}</code></pre>
+</body>
+</html>
+
