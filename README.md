@@ -39,66 +39,87 @@ erDiagram
 
 ```
 
-### 簡単な使い方
+# 簡単なAPIの使い方
 
-1. **ユーザーの取得 (GET /users)**  
-   全てのユーザーを取得します。  
-   `GET /users`
+## 1. ユーザーの取得 (GET /users)
 
-2. **ユーザーの作成 (POST /users)**  
-   名前とメールを提供して、新しいユーザーを作成します。  
-   `POST /users`  
-   リクエストボディ:
+全てのユーザーを取得します。  
+**リクエスト:** `GET /users`
 
-   ```json
-   {
-     "name": "John Doe",
-     "email": "johndoe@example.com"
-   }
-   ```
+## 2. ユーザーの作成 (POST /users)
 
-3. **ユーザーの更新 (PUT /users/{userId})**  
-   特定のユーザーをIDで指定し、名前とメールを更新します。  
-   `PUT /users/{userId}`  
-   リクエストボディ:
+名前とメールを提供して、新しいユーザーを作成します。  
+**リクエスト:** `POST /users`  
+**リクエストボディ:**
 
-   ```json
-   {
-     "name": "John Smith",
-     "email": "johnsmith@example.com"
-   }
-   ```
+```json
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "technical_skill": "Ruby on Rails",
+  "problem_solving_ability": "Advanced",
+  "communication_skill": "Excellent",
+  "security_awareness": "High",
+  "leadership_and_collaboration": "Strong",
+  "learning_and_adaptability": "Very High",
+  "engineer_type_id": 1
+}
+```
 
-4. **ユーザーの削除 (DELETE /users/{userId})**  
-   特定のユーザーをIDで指定して削除します。  
-   `DELETE /users/{userId}`
+## 3. ユーザーの更新 (PUT /users/{userId})
 
-5. **質問の取得 (GET /questions)**  
-   全ての質問を取得します。  
-   `GET /questions`
+特定のユーザーをIDで指定し、名前とメールを更新します。
+**リクエスト:** `PUT /users/{userId}`
+**リクエストボディ:**
 
-6. **質問の作成 (POST /questions)**  
-   質問のタイトルと内容を提供して、新しい質問を作成します。  
-   `POST /questions`  
-   リクエストボディ:
+```json
+{
+  "name": "John Smith",
+  "email": "johnsmith@example.com"
+}
+```
 
-   ```json
-   {
-     "title": "How to use Rails?",
-     "body": "Can anyone explain how to use Rails for building APIs?"
-   }
-   ```
+## 4. ユーザーの削除 (DELETE /users/{userId})
 
-7. **エンジニアタイプの取得 (GET /engineer_types)**  
-   全てのエンジニアタイプを取得します。  
-   `GET /engineer_types`
+特定のユーザーをIDで指定して削除します。
+**リクエスト:** `DELETE /users/{userId}`
 
-8. **エンジニアタイプの作成 (POST /engineer_types)**  
-   エンジニアタイプの名前を提供して、新しいエンジニアタイプを作成します。  
-   `POST /engineer_types`  
-   リクエストボディ:
-   ```json
-   {
-     "name": "Frontend Developer"
-   }
-   ```
+## 5. 質問の取得 (GET /questions)
+
+全ての質問を取得します。
+**リクエスト:** `GET /questions`
+
+## 6. 質問の作成 (POST /questions)
+
+質問のタイトルと内容を提供して、新しい質問を作成します。
+**リクエスト:** `POST /questions`
+**リクエストボディ:**
+
+```json
+{
+  "text": "What is the best way to improve problem-solving skills?",
+  "technical_skill": "Problem-solving",
+  "problem_solving_ability": "Advanced",
+  "communication_skill": "Intermediate",
+  "security_awareness": "Medium",
+  "leadership_and_collaboration": "High",
+  "learning_and_adaptability": "Very High"
+}
+```
+
+## 7. エンジニアタイプの取得 (GET /engineer_types)
+
+全てのエンジニアタイプを取得します。
+**リクエスト:** `GET /engineer_types`
+
+## 8. エンジニアタイプの作成 (POST /engineer_types)
+
+エンジニアタイプの名前を提供して、新しいエンジニアタイプを作成します。
+**リクエスト:** `POST /engineer_types`
+**リクエストボディ:**
+
+```json
+{
+  "name": "Frontend Developer"
+}
+```
